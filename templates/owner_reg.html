@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FoTer-Water Register</title>
+  </head>
+  <body>
+      <h1>Foter Water Registition</h1>
+    <form class="" action="owner" method="POST">
+      {% csrf_token %}
+      <label for="factory_name">factory name</label>
+      <input type="text" id="factory_name"  name="factory name" value="" placeholder="factory_name"><br>
+        <hr color:white;>
+      <label for="contact number1">contact number1</label>
+      <input type="text" name="number1" value="" placeholder="638360XXXX"><br>
+      <hr>
+      <label for="contact number2">contact number2</label>
+      <input type="text" name="number2" value="" placeholder="638360XXXX"><br>
+      <hr>
+      <label for="">Distict</label>
+      <input type="text" name="Distict" value=""><br>
+      <hr>
+      <label for="area">Area</label>
+      <input type="text" name="Area" value="">
+      <hr>
+      <label for="">Address</label>
+      <textarea name="Address" rows="4" cols="50"></textarea>
+      <hr>
+      <label for="">description</label>
+      <textarea name="description" rows="4" cols="50"></textarea>
+      <hr>
+      <label for="">message</label>
+      <textarea name="message" rows="4" cols="50" placeholder="do you want to tell as something"></textarea>
+      <hr>
+      <input type="text" name="amt_250" placeholder="250 yes or no " value=""><br><hr>
+      <input type="tex" name="amt_500" placeholder="500 yes or no" value=""><br><hr>
+      <input type="text" name="amt_1000" placeholder="1000 yes or no" value=""><br><hr>
+      <input type="text" name="amt_can" placeholder="can yes or no" value=""><br><hr>
+      <input type="text" name="des_can" placeholder="can liter"value=""><br><hr>
+
+       <input type="submit" name="" value="submit">
+
+    </form>
+    {% for message in messages %}
+        <h4> {{message}} </h4>
+    {% endfor %}
+  </body>
+</html>

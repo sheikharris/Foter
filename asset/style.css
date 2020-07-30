@@ -1,0 +1,32 @@
+.btn {
+  position :relative;
+  top:190px;
+  left:230px;
+  height:200px;
+  width:200px;
+  background-color:#010a43;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 100%;
+}
+.initialh1{
+  color: #ff5151;
+  font-size: 75px;
+  font-family:'Sacramento',cursive;
+  position:relative;
+  left:255px;
+  top:140px;
+}
+.size{
+  position:relative;
+  top:100px;
+  left:370px;
+  height:150px;
+  width:300px;
+}

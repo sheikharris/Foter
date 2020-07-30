@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FoTer-Water Approve</title>
+  </head>
+  <body>
+    <h1>Foter approval system</h1>
+    <hr><hr color="red">
+    {% for i in temps %}
+    <h3>{{i.factory_name}}</h3>
+     contact_num1: {{i.contact_num1}}<br>
+    contact_num2: {{i.contact_num2}}<br>
+    distict: {{i.distict}}<br>
+    area : {{i.area}}<br>
+    address : {{i.address}}<br>
+    desc : {{i.desc}}<br>
+    message : {{i.message}}<br>
+    amt_250: {{i.amt_250}}<br>
+    amt_500 :{{i.amt_500}}<br>
+    amt_1000 :{{i.amt_1000}}<br>
+    amt_can : {{i.amt_can}} ,{{i.des_can}}<br>
+    <form class="" action="app" method="post">
+      {% csrf_token %}
+      <input type="submit" name="submit"  value="approve_{{i.contact_num1}}">
+      <input type="submit" name="submit"  value="reject_{{i.contact_num1}}">
+
+    </form>
+
+<hr color="foter">
+    {% endfor %}
+  </body>
+</html>

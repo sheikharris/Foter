@@ -1,0 +1,18 @@
+.top{
+  padding:20%;
+  width: auto;
+}
+.sheik{
+  width:450px;
+  height: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position:relative;
+  top:60px;
+  left:20px;
+}
+.pawan{
+  position: relative;
+  left:30px;
+  height:500px;
+}
